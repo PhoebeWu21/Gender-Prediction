@@ -2,6 +2,8 @@
 Gender Prediction by Personal Preferences and Fears
 
 This is the project for Data Science Introduction Course in George Washington University. 
+- Authors: Ruyue Zhang, Phoebe Wu, Liwei Zhu, Sheng Luo
+- 28/11/2017
 
 ### Data Source
 This dataset is a survey done among Slovakian young people about their movie preference, music preference, interests, habits, personality traits, views on life, opinions, phobias, and demographics.
@@ -27,6 +29,11 @@ Similar research includes: 1) Ohannessian, C. M., Lerner, R. M., Lerner, J. V., 
 
 #### Gathering and Preparation the data for analysis
 Before the final best model, we wanted to subset the data, find the best model for every subset and significant variable which should be used in the final model. So we separated our data into music data, movie data, interests data and phobia data and combined gender data to every group thus making it a subset.
+
+#### The selection and determination of the correct regression model 
+We ran the basic logistic regression to check coefficients first. Then we used the bestglm package and view the best model. Due to the long running time of bestglm, after running it once we commented it. We picked out the variable in the best model then form a new logistic model, summarizing it to compare the change in coefficients. After we regrouped the data depending on the variable we picked out, we divided it into test and train data. We used the logistic model developed by train data to predict the test data, draw the ROC of every model and calculate the AUC to see how well our model classifies. 
+
+When all subsets were done, we selected all the variables used in subset model to form our final dataset. Then following the same procedure above to get our final best model and its AUC value.
 
 #### The predictions 
 The prediction we can make with our model is to predict the gender based on a person's preferences and fears. 
