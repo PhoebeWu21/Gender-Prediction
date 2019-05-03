@@ -43,13 +43,6 @@ str(Demographicsdata)
 ```
 
 
-####How did you select and determine the correct regression model to answer your question?
-
-We ran the basic logistic regression to check coefficients first. Then we used the bestglm package and view the best model. Due to the long running time of bestglm, after running it once we commented it. We picked out the variable in the best model then form a new logistic model, summarizing it to compare the change in coefficients. After we regrouped the data depending on the variable we picked out, we divided it into test and train data. We used the logistic model developed by train data to predict the test data, draw the ROC of every model and calculate the AUC to see how well our model classifies. 
-
-When all subsets were done, we selected all the variables used in subset model to form our final dataset. Then following the same procedure above to get our final best model and its AUC value. 
-
-
 
 ```{r}
 # Glm & Bestglm
