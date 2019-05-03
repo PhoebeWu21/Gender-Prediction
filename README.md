@@ -17,4 +17,4 @@ How can we predict ‘gender’ by personal preferences and fears in 90% accurac
 - K Nearest Neighbors 
 
 ### R Markdown 
-- file:///Users/phoebewu/Desktop/DATS/young-people-survey/Project2_final_report__1_.html 
+
