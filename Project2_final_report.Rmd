@@ -169,11 +169,6 @@ AUC_all@y.values
 ```
 
 
-####What predictions can you make with your model? 
-The prediction we can make with our model is to predict the gender based on a person's preferences and fears. 
-We can also use KNN to do the prediction. 
-
-
 ```{r}
 ###use KNN to test the Final Group.
 
