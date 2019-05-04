@@ -43,10 +43,8 @@ str(Demographicsdata)
 ```
 
 
-
 ```{r}
 # Glm & Bestglm
-
 library(bestglm)
 library(ROCR)
 library(pROC)
@@ -124,9 +122,6 @@ AUC_interest = performance(newpred_interest,measure = 'auc')
 AUC_interest@y.values
 #
 
-
-
-
 # Phobia
 phobiadatalogit <- glm(genderdata ~. , family = binomial(link = "logit"), data = phobiadata)
 summary(phobiadatalogit)
@@ -151,7 +146,6 @@ AUC_phobia@y.values
 ```
 
 
-
 ```{r}
 #final data
 newall = cbind(genderdata,musicdata[c(1,4,5,6,7,9,11,15,16,17)],moviedata[c(3,4,5,6,7,10,11)],interestsdata.1[c(1,3:15)],phobiadata[c(2,3,4,5,8,10)])
@@ -172,18 +166,12 @@ plot(newpred_all.performance, main='ROC of the Final Group')
 AUC_all = performance(newpred_all,measure = 'auc')
 AUC_all@y.values
 
-
-
 ```
-
-
 
 
 ####What predictions can you make with your model? 
 The prediction we can make with our model is to predict the gender based on a person's preferences and fears. 
 We can also use KNN to do the prediction. 
-
-
 
 
 ```{r}
@@ -261,5 +249,3 @@ kNN_res[row(kNN_res) == col(kNN_res)]
 kNN_acc = sum(kNN_res[row(kNN_res) == col(kNN_res)]) / sum(kNN_res)
 kNN_acc
 ```
-
-
