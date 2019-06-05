@@ -3,7 +3,7 @@ Gender Prediction by Personal Preferences and Fears
 
 This is the project for Data Science Introduction Course in George Washington University. 
 - Authors: Ruyue Zhang, Phoebe Wu, Liwei Zhu, Sheng Luo
-- 28/11/2017
+- Date Oct. 2017 - Nov. 2017
 
 ### Data Source
 This dataset is a survey done among Slovakian young people about their movie preference, music preference, interests, habits, personality traits, views on life, opinions, phobias, and demographics.
